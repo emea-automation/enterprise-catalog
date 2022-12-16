@@ -1,0 +1,20 @@
+- defaultTab: nodes
+  description: test1
+  executionEnabled: true
+  group: Writing Jobs 101
+  id: 4393c64d-0de2-4fa1-b1c3-ff68f50511b0
+  loglevel: INFO
+  name: Basic Job
+  nodeFilterEditable: false
+  plugins:
+    ExecutionLifecycle: {}
+  scheduleEnabled: true
+  schedules: []
+  sequence:
+    commands:
+    - description: '1234'
+      exec: echo "hello world"
+    keepgoing: false
+    strategy: node-first
+  uuid: 4393c64d-0de2-4fa1-b1c3-ff68f50511b0
+
