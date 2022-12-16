@@ -46,7 +46,6 @@
     name: validated
     regex: '^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$'
     required: true
-    value: me@customer.com
   plugins:
     ExecutionLifecycle: {}
   scheduleEnabled: true
@@ -55,6 +54,12 @@
     commands:
     - description: Simple Option Input
       exec: echo "You chose "${option.simple}"GB Disk space
+    - description: Display all options
+      script: |-
+        echo "Provision the following applications"
+        echo "@option.applicationlist@"
+        echo "with @option.simple@ GB storage"
+        echo "to user with address: @option.validated@"
     keepgoing: false
     strategy: node-first
   tags: first_steps
