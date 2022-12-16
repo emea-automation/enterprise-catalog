@@ -1,11 +1,11 @@
 - defaultTab: nodes
   description: "\n> Because even the longest journey starts with a single step\n\n\
     **Description:**\nThis job is the most basic you can possibly run :-\nA single\
-    \ step, to run the `whoami` command \n**Assumptions:**\n\n - RBA with Runner Installed\
-    \ OR PAOP compatible \n - Linux/Windows compatible\n\n**Documentation:** Not Applicable"
+    \ step, to run the `whoami` command <br>\n**Assumptions:**\n\n - RBA with Runner\
+    \ Installed OR PAOP compatible \n - Linux/Windows compatible\n\n**Documentation:**\
+    \ Not Applicable"
   executionEnabled: true
   group: 👣 First Steps 👣
-  id: 4c3a3281-433c-4feb-8351-90b385598840
   loglevel: INFO
   name: 1. Your First Automation Job
   nodeFilterEditable: false
@@ -20,5 +20,4 @@
     keepgoing: false
     strategy: node-first
   tags: first_steps
-  uuid: 4c3a3281-433c-4feb-8351-90b385598840
 

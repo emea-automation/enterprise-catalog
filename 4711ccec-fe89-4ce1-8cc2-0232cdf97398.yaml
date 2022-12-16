@@ -10,7 +10,6 @@
     \ Not Applicable"
   executionEnabled: true
   group: 👣 First Steps 👣
-  id: 4711ccec-fe89-4ce1-8cc2-0232cdf97398
   loglevel: INFO
   name: 2. Running Inline Scripts
   nodeFilterEditable: false
@@ -131,5 +130,4 @@
     keepgoing: false
     strategy: node-first
   tags: first_steps
-  uuid: 4711ccec-fe89-4ce1-8cc2-0232cdf97398
 
