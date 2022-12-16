@@ -1,0 +1,61 @@
+- defaultTab: nodes
+  description: |
+    > Using options to grab user input
+
+    **Description:**
+    Options are variables in Process Automation<br>
+    An option can be used as user input or passed from as webhook payload<br>
+    This shows a basic example of three options, and how they are referenced in both commands and inline scripts<br>
+    The 3rd option shows a regex example, used to validate input <br>
+
+    **Assumptions:**
+
+     - RBA with Runner Installed OR PAOP installation
+     - Linux Tested
+
+    **Documentation:** [Job Options](https://docs.rundeck.com/docs/manual/job-options.html#job-options)
+  executionEnabled: true
+  group: 👣 First Steps 👣
+  loglevel: INFO
+  name: 3. Capturing Options
+  nodeFilterEditable: false
+  options:
+  - description: "The simple option allows a user to enter free form text into a reusable\
+      \ text variable.\nDefaults can be set easily\n\nThese options can be referenced\
+      \ in commands as\n${option.simple}\n\nor in scripts using  @option.simple@ "
+    label: Enter Disk Capacity (GB)
+    name: simple
+    value: '10'
+  - delimiter: ','
+    description: Options can be restricted to specific predetermined values.
+    enforced: true
+    label: List of available installable applications
+    multivalued: true
+    name: applicationlist
+    values:
+    - NodeJS
+    - Python3
+    - Python2.7
+    - Jupyter
+    - Docker
+    - .Net 5.0
+    valuesListDelimiter: ','
+  - description: |
+      A validated option ensures the entered value matches a predetermined pattern.
+    label: Users Email address in the format (name@domain.com)
+    name: validated
+    regex: '^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$'
+    required: true
+    value: me@customer.com
+  plugins:
+    ExecutionLifecycle: {}
+  scheduleEnabled: true
+  schedules: []
+  sequence:
+    commands:
+    - description: Simple Option Input
+      exec: echo "You chose "${option.simple}"GB Disk space
+    keepgoing: false
+    strategy: node-first
+  tags: first_steps
+
