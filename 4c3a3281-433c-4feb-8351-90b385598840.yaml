@@ -1,9 +1,17 @@
 - defaultTab: nodes
-  description: "\n> Because even the longest journey starts with a single step\n\n\
-    **Description:**\nThis job is the most basic you can possibly run :-\nA single\
-    \ step, to run the `whoami` command <br>\n**Assumptions:**\n\n - RBA with Runner\
-    \ Installed OR PAOP compatible \n - Linux/Windows compatible\n\n**Documentation:**\
-    \ Not Applicable"
+  description: |2-
+
+    > Because even the longest journey starts with a single step
+
+    **Description:**
+    This job is the most basic you can possibly run :-
+    A single step, to run the `whoami` command <br>
+    **Assumptions:**
+
+     - RBA with Runner Installed OR Self Hosted (PAOP)
+     - Linux/Windows compatible
+
+    **Documentation:** Not Applicable
   executionEnabled: true
   group: 👣 First Steps 👣
   loglevel: INFO

@@ -1,5 +1,6 @@
 - defaultTab: nodes
-  description: |
+  description: |2
+
     > Using options to grab user input
 
     **Description:**
@@ -10,7 +11,7 @@
 
     **Assumptions:**
 
-     - RBA with Runner Installed OR PAOP installation
+     - RBA with Runner Installed OR Self Hosted (PAOP)
      - Linux Tested
 
     **Documentation:** [Job Options](https://docs.rundeck.com/docs/manual/job-options.html#job-options)

@@ -1,13 +1,21 @@
 - defaultTab: nodes
-  description: "> Allow an existing script to be run via webhook,delegated to a human\
-    \ or scheduled\n\n**Description:**\nThe inline script allows a remote deployment\
-    \ and running of a Process Automation hosted file.<br>\nANY script can be used,\
-    \ such as Python,Bash,Ruby etc. But this will demonstrate a bash script<br>\n\n\
-    Modified from an original example at : www.tecmint.com/linux-server-health-monitoring-script/<br>\n\
-    \nThe shebang (#! /bin/bash) eg.at the beginning of the file denotes the executable\
-    \ to use, but this can also be defined at the invocation parameter<br>\n**Assumptions:**\n\
-    \n - RBA with Runner Installed OR PAOP compatible \n - Linux Tested\n\n**Documentation:**\
-    \ Not Applicable"
+  description: |2-
+
+    > Allow an existing script to be run via webhook,delegated to a human or scheduled
+
+    **Description:**
+    The inline script allows a remote deployment and running of a Process Automation hosted file.<br>
+    ANY script can be used, such as Python,Bash,Ruby etc. But this will demonstrate a bash script<br>
+
+    Modified from an original example at : [www.tecmint.com/linux-server-health-monitoring-script](www.tecmint.com/linux-server-health-monitoring-script)<br>
+
+    The shebang (#! /bin/bash) eg.at the beginning of the file denotes the executable to use, but this can also be defined at the invocation parameter<br>
+    **Assumptions:**
+
+     - RBA with Runner Installed OR Self Hosted (PAOP)
+     - Linux Tested
+
+    **Documentation:** Not Applicable
   executionEnabled: true
   group: 👣 First Steps 👣
   loglevel: INFO
