@@ -1,0 +1,41 @@
+- defaultTab: nodes
+  description: |2-
+
+    > Useful Variables you can incorporate into your own projects
+
+    <br>**Description:**
+    Prints out all job variables
+    you can use these anywhere as ${job.[variable]}
+    <br>Frequently used include:
+
+    - username
+    - id (great for if you need a unique identifier for a temporary file/directory)
+    - url
+
+    **Assumptions:**
+
+     - RBA with Runner Installed OR Self Hosted (PAOP)
+     - Linux/Windows compatible
+
+    **Documentation:** Not Applicable
+  executionEnabled: true
+  group: 👣 First Steps 👣
+  loglevel: INFO
+  name: 9. Step Variables
+  nodeFilterEditable: false
+  plugins:
+    ExecutionLifecycle: {}
+  scheduleEnabled: true
+  schedules: []
+  sequence:
+    commands:
+    - configuration:
+        debugOnly: 'false'
+      description: Log all Step Variables
+      nodeStep: false
+      type: log-data-step
+    - description: Echo Username for Job
+      exec: echo "Job Ran by "${job.username}
+    keepgoing: false
+    strategy: node-first
+

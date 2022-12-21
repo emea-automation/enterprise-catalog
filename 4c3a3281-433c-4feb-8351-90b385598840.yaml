@@ -15,7 +15,7 @@
   executionEnabled: true
   group: 👣 First Steps 👣
   loglevel: INFO
-  name: 1. Your First Automation Job
+  name: 1. First Command
   nodeFilterEditable: false
   plugins:
     ExecutionLifecycle: {}
